@@ -36,21 +36,21 @@
       </div>
 
       <div class="form-example">
-        <label for="name">Sexe: </label>
+        <label for="name">Mot de passe: </label>
         <input type="password" name="password" id="name" required>
       </div>
       <div class="form-example">
-        <label for="name">Repète mot de passe: </label>
+        <label for="name">Repete Mot de passe: </label>
         <input type="password" name="password2" id="name" required>
       </div>
       <div class="form-example">
-        <label for="name">Mot de passe: </label>
+        <label for="name">Sexe: </label>
         <input type="radio" name="homme"  /> M
         <input type="radio" name="femme" /> F
         <input type="radio" name="autre"  /> Autre
       </div>
     <div class="form-example">
-      <input type="submit" value="Enregistre!"> 
+      <input type="submit" value="Enregistre!">
     </div>
   </form>
 

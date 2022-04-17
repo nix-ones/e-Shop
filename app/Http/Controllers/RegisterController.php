@@ -26,15 +26,18 @@ class RegisterController extends Controller
         return view('userForm');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'bail|required|between:5,20|alpha',
+            'prenom' => 'bail|required|between:5,20|alpha',
+            'email' => 'bail|required|email',
+            'birth' => 'bail|required|between:5,20|alpha',
+            'password'=> 'required',
+            'password_confirm' => 'required|same:password',
+            'message' => 'bail|required|max:250',
+        ]);
+
     }
 
     /**
@@ -80,5 +83,8 @@ class RegisterController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function test(){
+        return view('update');
     }
 }

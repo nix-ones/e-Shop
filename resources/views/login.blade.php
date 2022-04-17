@@ -10,15 +10,15 @@
 
  <form action="" method="get" class="form-example">
     <div class="form-example">
-      <label for="name">Nom: </label>
+      <label for="name">Email: </label>
       <input type="text" name="name" id="name" required>
     </div>
     <div class="form-example">
-        <label for="name">Prenom: </label>
-        <input type="text" name="prenom" id="name" required>
+        <label for="name">Mot de passe: </label>
+        <input type="password" name="password" id="name" required>
       </div>
       <div class="form-example">
         <input type="submit" value="Connexion!">
-        <a href="{{URL('/create')}}">S'inscrire</a>
+        <a href="{{URL('create')}}">S'inscrire</a>
       </div>
 @endsection

@@ -14,8 +14,9 @@ use App\Http\Controllers\RegisterController;
 
 */
 Route::get('/', function () {
-    return view('compte');
+    return view('home');
 });
 
-Route::get('Register', [RegisterController::class, 'index']);
-Route::get('Register', [RegisterController::class, 'create']);
+Route::get('register', [RegisterController::class, 'index']);
+Route::get('create', [RegisterController::class, 'create']);
+Route::get('test',[RegisterController::class, 'test']);
